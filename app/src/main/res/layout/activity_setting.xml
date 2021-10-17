@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical"
+    tools:context=".Activities.SettingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/Account"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvChangeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_language_black_24dp"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="@string/language"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_privacy_policy"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Privacy Policy"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tvTermsAndCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_terms_condition1"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Terms And Condition"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_support1"
+        android:drawablePadding="5dp"
+        android:text="Support"
+        android:padding="5dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="5dp"
+        android:text="Log Out"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+</LinearLayout>

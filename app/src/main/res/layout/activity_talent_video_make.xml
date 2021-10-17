@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.video.tamas.VideoRecordingUtil.PortraitFrameLayout
+        android:id="@+id/wrap_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery Upload"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorWhite"
+        android:layout_above="@+id/ivVideoFromGallery"
+        />
+    <ImageView
+        android:id="@+id/ivVideoFromGallery"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_gallery" />
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/custom_drawable_image_record"
+        android:text="@string/app_record"
+        android:textColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/llAddSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@mipmap/ic_cancel" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llAddSound"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_switch_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_flip_camera" />
+
+        <TextView
+            android:id="@+id/tvSwitchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Flip"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/btn_flash"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_flash_off" />
+
+        <TextView
+            android:id="@+id/tvFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Flash"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/btn_filter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_filter" />
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Filters"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_flash"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="FLASH"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_filter"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="FILTER"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/btn_flash" />-->
+
+    <Button
+        android:id="@+id/btn_image_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMAGE CAPTURE"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

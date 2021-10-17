@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/myLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        app:lazyloader_animDur="500"
+        app:lazyloader_dotsDist="3dp"
+        app:lazyloader_dotsRadius="5dp"
+        app:lazyloader_firstDelayDur="100"
+        app:lazyloader_firstDotColor="@color/colorPrimary"
+        app:lazyloader_secondDelayDur="200"
+        app:lazyloader_secondDotColor="@color/colorRed"
+        app:lazyloader_thirdDotColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="No videos available. "
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <com.video.tamas.Utils.DirectionalViewPager
+        android:id="@+id/videoViewPager"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/transparent" />
+
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/rvVideos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.video.tamas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo_final"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.EntertainmentVideoListActivity" />
+        <activity
+            android:name=".Activities.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VerifyOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AboutUsAndPrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ViewUserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.WriterListUploadActivity"
+            android:label="Writers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VideoBySongDetailedListActivity"
+            android:label="Videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VideoListBySongIdActivity"
+            android:label="Videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TalentCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TalentVideoUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TalentVideoMakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CategorywiseVideoListActivity"
+            android:label="Talent Videos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Activities.FollowerListActivity"
+            android:label="Followers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FollowingListActivity"
+            android:label="Following"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.SongListActivity"
+            android:label="Choose Song"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SettingActivity"
+            android:label="Privacy and Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EntertainmentVideoMakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EntertainmentCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EntertainmentVideoUploadActivity"
+            android:label="         Upload"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.myfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <service android:name=".firebase.KasinoBarFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.UploadVideoService"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.BaseActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LikeListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

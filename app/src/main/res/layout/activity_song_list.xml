@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SongListActivity">
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/lazyLoaderSongList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:lazyloader_animDur="500"
+        app:lazyloader_dotsDist="3dp"
+        app:lazyloader_dotsRadius="5dp"
+        app:lazyloader_firstDelayDur="100"
+        app:lazyloader_firstDotColor="@color/colorPrimary"
+        app:lazyloader_secondDelayDur="200"
+        app:lazyloader_secondDotColor="@color/colorRed"
+        app:lazyloader_thirdDotColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSongList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No song available, you can upload by clicking on plus icon. "
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/right_labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            android:elevation="4sp"
+            fab:fab_addButtonColorNormal="@color/colorAccent"
+            fab:fab_addButtonColorPressed="@color/colorRed"
+            fab:fab_addButtonPlusIconColor="@color/colorWhite"
+            fab:fab_addButtonSize="normal"
+            fab:fab_expandDirection="up"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabUploadSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorRed"
+                fab:fab_icon="@drawable/ic_music"
+                fab:fab_title="Upload song" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </FrameLayout>
+</RelativeLayout>

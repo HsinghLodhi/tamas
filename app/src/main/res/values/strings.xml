@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">Tamas</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="app_record">Record</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tag_fragment">fragment_tag</string>
+
+    <string name="language">Language</string>
+    <string name="Account">Account</string>
+    <string name="Search">Search</string>
+    <string name="Notification">Notification</string>
+    <string name="Me">Me</string>
+
+    <string name="Comment">Comments</string>
+    <string name="following">Following</string>
+    <string name="follower">Followers</string>
+    <string name="Likes">Likes</string>
+    <string name="web_client_id">56482281157-5si8rsu8jfl3fmn8b3di75ofip9qr3kg.apps.googleusercontent.com</string>
+
+
+    <!--  <string name="facebook_app_id">498665214291656</string>
+      <string name="fb_login_protocol_scheme">fb498665214291656</string>-->
+    <string name="facebook_app_id">584117212454287</string>
+    <string name="fb_login_protocol_scheme">fb584117212454287</string>
+    <string name="i_agree_to_the_terms_and_conditions" translatable="false"><u>I agree to the Terms and Conditions</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

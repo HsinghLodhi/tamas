@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">होम</string>
+    <string name="language">भाषा</string>
+    <string name="Account">ऍकाउन्ट्</string>
+    <string name="Search">तलाश</string>
+    <string name="Notification">इनबॉक्स</string>
+    <string name="Me">मैं</string>
+
+    <string name="Comment">िप्पणी</string>
+    <string name="following">फॉलो कर रहे</string>
+    <string name="follower">फोल्लोवेर</string>
+    <string name="Likes">लाइक्स</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56482281157",
+    "firebase_url": "https://tamas-d216b.firebaseio.com",
+    "project_id": "tamas-d216b",
+    "storage_bucket": "tamas-d216b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56482281157:android:3fd762a0db1aa59c08a2ac",
+        "android_client_info": {
+          "package_name": "com.video.tamas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56482281157-98ue6uvrbf751f1a0pv2kq90c7qmo7u0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.video.tamas",
+            "certificate_hash": "0a391791e966e23420a3fbf3190a1af34868b8c9"
+          }
+        },
+        {
+          "client_id": "56482281157-5si8rsu8jfl3fmn8b3di75ofip9qr3kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGDbOZPT7BzwfXRNmUjo7lCk5k4-f59OA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56482281157-5si8rsu8jfl3fmn8b3di75ofip9qr3kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
